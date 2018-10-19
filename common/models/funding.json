@@ -1,0 +1,29 @@
+{
+  "name": "funding",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "userID": {
+      "type": "string"
+    },
+    "campaignName": {
+      "type": "string"
+    },
+    "amount": {
+      "type": "string"
+    },
+    "contributor": {
+      "type": "string"
+    },
+    "campaignManager": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

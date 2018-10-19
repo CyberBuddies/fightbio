@@ -1,0 +1,156 @@
+{
+  "name": "bios",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "userID": {
+      "type": "string"
+    },
+    "nickname": {
+      "type": "string"
+    },
+    "name": {
+      "type": "string"
+    },
+    "image": {
+      "type": "string"
+    },
+    "bioImage": {
+      "type": "string"
+    },
+    "provider": {
+      "type": "string"
+    },
+    "prowin": {
+      "type": "string"
+    },
+    "proloss": {
+      "type": "string"
+    },
+    "prodecisions": {
+      "type": "string"
+    },
+    "proTKO": {
+      "type": "string"
+    },
+    "prosubmissions": {
+      "type": "string"
+    },
+    "amateurwin": {
+      "type": "string"
+    },
+    "amateurloss": {
+      "type": "string"
+    },
+    "amateurdecisions": {
+      "type": "string"
+    },
+    "amateurTKO": {
+      "type": "string"
+    },
+    "amateursubmissions": {
+      "type": "string"
+    },
+    "age": {
+      "type": "string"
+    },
+    "gender": {
+      "type": "string"
+    },
+    "feet": {
+      "type": "string"
+    },
+    "inches": {
+      "type": "string"
+    },
+    "weight": {
+      "type": "string"
+    },
+    "reach": {
+      "type": "string"
+    },
+    "legReach": {
+      "type": "string"
+    },
+    "titles": {
+      "type": "string"
+    },
+    "certifications": {
+      "type": "string"
+    },
+    "biography": {
+      "type": "string"
+    },
+    "style": {
+      "type": "string"
+    },
+    "styleRank": {
+      "type": "string"
+    },
+    "style2": {
+      "type": "string"
+    },
+    "styleRank2": {
+      "type": "string"
+    },
+    "style3": {
+      "type": "string"
+    },
+    "styleRank3": {
+      "type": "string"
+    },
+    "styleOther": {
+      "type": "string"
+    },
+    "styleOtherRank": {
+      "type": "string"
+    },
+    "totalYearofExp": {
+      "type": "string"
+    },
+    "personalWebsite": {
+      "type": "string"
+    },
+    "googleUrl": {
+      "type": "string"
+    },
+    "facebookUrl": {
+      "type": "string"
+    },
+    "twitterUrl": {
+      "type": "string"
+    },
+    "instagramUrl": {
+      "type": "string"
+    },
+    "snapchatUrl": {
+      "type": "string"
+    },
+    "fundingGoal": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {
+    "campaigns": {
+      "type": "hasMany",
+      "model": "campaigns",
+      "foreignKey": "userID"
+    },
+    "teamCampaigns": {
+      "type": "hasMany",
+      "model": "teamCampaigns",
+      "foreignKey": "userID"
+    },
+    "fundings": {
+      "type": "hasMany",
+      "model": "funding",
+      "foreignKey": "userID"
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

@@ -1,0 +1,35 @@
+{
+  "name": "teamCampaigns",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "userID": {
+      "type": "string"
+    },
+    "teamName": {
+      "type": "string"
+    },
+    "campaignManager": {
+      "type": "string"
+    },
+    "amount": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {
+    "fundings": {
+      "type": "hasMany",
+      "model": "funding",
+      "foreignKey": ""
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

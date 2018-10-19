@@ -1,0 +1,35 @@
+{
+  "name": "dojos",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "bioImage": {
+      "type": "string"
+    },
+    "name": {
+      "type": "string"
+    },
+    "biography": {
+      "type": "string"
+    },
+    "location": {
+      "type": "string"
+    },
+    "category": {
+      "type": "string"
+    },
+    "fundingGoal": {
+      "type": "number"
+    },
+    "userId": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}
