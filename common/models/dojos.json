@@ -26,9 +26,6 @@
     },
     "userId": {
       "type": "string"
-    },
-    "dojoAddress": {
-      "type": "string"
     }
   },
   "validations": [],

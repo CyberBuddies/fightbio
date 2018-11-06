@@ -1,7 +1,12 @@
 {
   "restApiRoot": "/api",
-  "host": "204.48.23.200",
-  "port": 443,
+  "host": "fighter.bio",
+  "https-port": 3000,
+  "url": "https://fighter.bio:3000/", 
+  "swagger": {
+    "protocol": "https"
+  },
+  
   "remoting": {
     "context": false,
     "rest": {
@@ -18,5 +23,18 @@
       "limit": "100kb"
     },
     "cors": false
+  },
+
+  "httpMode": false,
+  "certConfig": {
+    "path": "/certificate/path/",
+    "key": "serverkey.pem",
+    "cert": "server-certificate.pem",
+    "ca": [
+        "client-certificate-to-validate.pem"
+    ],
+    "requestCert": true,
+    "rejectUnauthorized": true
   }
+
 }
